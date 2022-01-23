@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Upload</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/owl-carousel/owl.carousel.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/lightbox/simpleLightbox.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/nice-select/css/nice-select.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/animate-css/animate.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/jquery-ui/jquery-ui.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/linericon/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+</head>
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="top_menu row m0">
+			<div class="container">
+				<div class="float-left">
+					<ul class="left_side">
+						<li>
+							<a href="login.html">
+								<i class="fa fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="fa fa-dribbble"></i>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="fa fa-behance"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="float-right">
+					<ul class="right_side">
+						<li>
+							<a href="login.html">
+								<i class="lnr lnr-phone-handset"></i>
+									7743966215
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="lnr lnr-envelope"></i>
+								admin@hospice.com
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html">
+						<img src="{{ url_for('static',filename='img/logo.png') }}" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					 aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<div class="row ml-0 w-100">
+							<div class="col-lg-12 pr-0">
+								<ul class="nav navbar-nav center_nav pull-right">
+									<li class="nav-item active">
+										<!-- <a class="nav-link" href="index.html">Home</a> -->
+										<a class="nav-link" href="{{ url_for('index') }}">Home</a>
+									</li>
+									<li class="nav-item ">
+										<!-- <a class="nav-link" href="departments.html">Departments</a> -->
+										<a class="nav-link" href="{{ url_for('departments') }}">Departments</a>
+									</li>
+									<li class="nav-item ">
+										<!-- <a class="nav-link" href="doctors.html">Doctors</a> -->
+										<a class="nav-link" href="{{ url_for('doctors') }}">Doctors</a>
+									</li>
+									<li class="nav-item submenu dropdown">
+										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+										<ul class="dropdown-menu">
+											<li class="nav-item">
+												<a class="nav-link" href="{{ url_for('about') }}">About</a>
+												<!-- <a class="nav-link" href="about.html">About</a -->
+												<!-- <a class="nav-link" href="{{ url_for('services') }}">Services</a> -->
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="{{ url_for('services') }}">Services</a>
+												<!-- <a class="nav-link" href="services.html">Services</a> -->
+											</li>
+											<li class="nav-item">
+												<!-- <a class="nav-link" href="elements.html">Elements</a> -->
+												<a class="nav-link" href="{{ url_for('elements') }}">Elements</a>
+											</li>
+											<li class="nav-item">
+												<!-- <a class="nav-link" href="contact.html">Contact</a> -->
+												<a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<!-- <a class="nav-link" href="contact.html">Contact</a> -->
+										<a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+									</li>
+									<li class="nav-item">
+										<!-- <a class="nav-link" href="contact.html">Contact</a> -->
+										<a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================ Banner Area =================-->
+	<section class="banner_area">
+		<div class="banner_inner d-flex align-items-center">
+			<div class="container">
+				<div class="banner_content text-left">
+					<h2>Procedure Category</h2>
+					<div class="page_link">
+						<a href="index.html">Home</a>
+						<a href="departments.html">Departments</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br>
+    <br><br><br>
+
+	<h2 align="center">Standardised NPIQ Test</h2>
+		<br><br>
+		<style>
+		table {
+		  border-collapse: collapse;
+		  width: 100%;
+		  padding:15px;
+		}
+
+		th, td {
+		  padding: 8px;
+		  text-align: left;
+		}
+
+		tr:hover {background-color:#f5f5f5;}
+		</style>
+
+        <br>
+		<h3 style="margin-left: 190px;">Instructions regarding the tests</h3>
+		<ul style="margin-left: 160px;"><br>
+			     <h4>  a) Rate the SEVERITY of the symptom (how it affects the patient):</h4>
+                 <h5>  1 = Mild (noticeable, but not a significant change)  </h5>
+                 <h5>  2 = Moderate (significant, but not a dramatic change) </h5>
+                 <h5>  3 = Severe (very marked or prominent, a dramatic change)</h5><br></ul>
+
+       <ul style="margin-left: 160px;">
+            <h4>  b) Rate the DISTRESS you experience due to that symptom (how it affects you):</h4>
+             <h5>  0 = Not distressing at all </h5>
+             <h5>  1 = Minimal (slightly distressing, not a problem to cope with) </h5>
+             <h5>  2 = Mild (not very distressing, generally easy to cope with) </h5>
+             <h5>  3 = Moderate (fairly distressing, not always easy to cope with)</h5>
+             <h5>  4 = Severe (very distressing, difficult to cope with)</h5>
+             <h5>  5 = Extreme or Very Severe (extremely distressing, unable to cope with </h5><br>
+		</ul>
+
+	        <table style="width:75%" border="5" align="center" id="myTable" class="table">
+			<style type="text/css">
+			  b {
+ 					 color: black;
+
+				}
+			</style>
+			<tr>
+			<th>Category</th>
+			<th>Questions</th>
+			<th>Severity</th>
+			<th>Distress</th>
+			</tr>
+
+	            <tr>
+	            <td>Delusions</td>
+	            <td>a) Does the patient have false beliefs, such as thinking that others are stealing from him/her or planning to harm him/her in some way?</td>
+
+	            <td>
+	            <div class="default-select">
+				<select id="default-select1" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+	            </td>
+
+	            <td>
+	            <div class="default-select">
+				<select id="default-select1a" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+				</td>
+	            </tr>
+
+				<tr>
+				<td>Hallucinations</td>
+				<td>b) Does the patient have hallucinations such as false visions or voices?  Does he or she seem to hear or see things that are not present?</td>
+				<td>
+				<div class="default-select" >
+				<select id="default-select2" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+				</td>
+
+				<td>
+				<div class="default-select" >
+				<select id="default-select2a" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+			    </td>
+			    </tr>
+
+				<tr>
+				<td>Agitation/Aggression</td>
+				<td>c) Is the patient resistive to help from others at times, or hard to handle?</td>
+				<td>
+				<div class="default-select" >
+				<select id="default-select3" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+				</td>
+				<td>
+				<div class="default-select">
+				<select id="default-select3a" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+			    </div>
+			    </td>
+			    </tr>
+
+
+				<tr>
+				<td>Dysphoria/Depression</td>
+				<td>d) Does the patient seem sad or say that he /she is depressed?</td>
+				<td>
+				<div class="default-select" >
+				<select id="default-select4" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+				</td>
+				<td>
+				<div class="default-select">
+				<select id="default-select4a" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+			    </div>
+			    </td>
+			    </tr>
+
+				<tr>
+				<td>Anxiety</td>
+				<td>e) Does the patient become upset when separated from you?Does he/she have any other signs of nervousness such as shortness of breath, sighing, being unable to relax, or feeling excessively tense?</td>
+				<td>
+				<div class="default-select" >
+				<select id="default-select5" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+				</td>
+				<td>
+				<div class="default-select">
+				<select id="default-select5a" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+			    </div>
+			    </td>
+			    </tr>
+
+				<tr>
+				<td>Euphoria/Elation</td>
+				<td>f) Does the patient appear to feel too good or act excessively happy?</td>
+				<td>
+				<div class="default-select" >
+				<select id="default-select6" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+				</td>
+				<td>
+			    <div class="default-select">
+				<select id="default-select6a" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+			    </div>
+			    </td>
+			    </tr>
+
+				<tr>
+				<td>Apathy/Indifference</td>
+				<td>g) Does the patient seem less interested in his/her usual activities or in the activities and plans of others?</td>
+				<td>
+				<div class="default-select" >
+				<select id="default-select7" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+				</td>
+				<td>
+				<div class="default-select">
+				<select id="default-select7a" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+			    </div>
+			    </td>
+			    </tr>
+
+				<tr>
+				<td>Disinhibition</td>
+				<td>h) Does the patient seem to act impulsively, for example, talking to strangers as if he/she knows them, or saying things that may hurt people's feelings?</td>
+				<td>
+				<div class="default-select" >
+				<select id="default-select8" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+				</td>
+				<td>
+				<div class="default-select">
+				<select id="default-select8a" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+			    </div>
+			    </td>
+			    </tr>
+
+				<tr>
+				<td>Irritability/Lability</td>
+				<td>i) Is the patient impatient and cranky?  Does he/she have difficulty coping with delays or waiting for planned activities?</td>
+				<td>
+				<div class="default-select" >
+				<select id="default-select9" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+				</td>
+				<td>
+				<div class="default-select">
+				<select id="default-select9a" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+			    </div>
+			    </td>
+			    </tr>
+
+				<tr>
+				<td>Aberrant Motor</td>
+				<td>j) Does the patient engage in repetitive activities such as pacing around the house, handling buttons, wrapping string,or doing other things repeatedly?</td>
+				<td>
+				<div class="default-select" >
+				<select id="default-select10" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+				</td>
+				<td>
+				<div class="default-select">
+				<select id="default-select10a" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+			    </div>
+			    </td>
+			    </tr>
+
+			    <tr>
+				<td>Nighttime Behaviour</td>
+				<td>k) Does the patient awaken you during the night, rise too early in the morning, or take excessive naps during the day?</td>
+				<td>
+				<div class="default-select" >
+				<select id="default-select11" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+				</td>
+				<td>
+				<div class="default-select">
+				<select id="default-select11a" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+			    </div>
+			    </td>
+			    </tr>
+
+			    <tr>
+				<td>Appetite/Eating</td>
+				<td>l) Has the patient lost or gained weight, or had a change in the type of food he/she likes?</td>
+				<td>
+				<div class="default-select" >
+				<select id="default-select12" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+				</div>
+				</td>
+				<td>
+				<div class="default-select">
+				<select id="default-select12a" onchange="myFunction()" autocomplete="off">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				</select>
+			    </div>
+			    </td>
+			    </tr>
+
+
+				<tr>
+					<td>Total Marks:</td>
+					<td>72</td>
+					<td id='total2'></td>
+					<td id='total1'></td>
+				</tr>
+
+
+
+		<br><br>
+
+		<script type="text/javascript">
+			function myFunction() {
+			  var x1 = parseInt(document.getElementById("default-select1a").value);
+			  var x2 = parseInt(document.getElementById("default-select2a").value);
+			  var x3 = parseInt(document.getElementById("default-select3a").value);
+			  var x4 = parseInt(document.getElementById("default-select4a").value);
+			  var x5 = parseInt(document.getElementById("default-select5a").value);
+			  var x6 = parseInt(document.getElementById("default-select6a").value);
+			  var x7 = parseInt(document.getElementById("default-select7a").value);
+			  var x8 = parseInt(document.getElementById("default-select8a").value);
+			  var x9 = parseInt(document.getElementById("default-select9a").value);
+			  var x10= parseInt(document.getElementById("default-select10a").value);
+			  var x11= parseInt(document.getElementById("default-select11a").value);
+			  var x12= parseInt(document.getElementById("default-select12a").value);
+
+              var sum = x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10 + x11 + x12;
+			  document.getElementById("total1").innerHTML = sum;
+
+			  var x13 = parseInt(document.getElementById("default-select1").value);
+			  var x14 = parseInt(document.getElementById("default-select2").value);
+			  var x15 = parseInt(document.getElementById("default-select3").value);
+			  var x16 = parseInt(document.getElementById("default-select4").value);
+			  var x17 = parseInt(document.getElementById("default-select5").value);
+			  var x18 = parseInt(document.getElementById("default-select6").value);
+			  var x19 = parseInt(document.getElementById("default-select7").value);
+			  var x20 = parseInt(document.getElementById("default-select8").value);
+			  var x21 = parseInt(document.getElementById("default-select9").value);
+			  var x22 = parseInt(document.getElementById("default-select10").value);
+			  var x23 = parseInt(document.getElementById("default-select11").value);
+			  var x24 = parseInt(document.getElementById("default-select12").value);
+
+              var sum1 = x13 + x14 + x15 + x16 + x17 + x18 + x19 + x20 + x21 + x22 + x23 + x24;
+			  document.getElementById("total2").innerHTML = sum1;
+
+			  var sum2 = sum + sum1;
+			  document.getElementById("tex").innerHTML = sum2;
+
+
+		}
+		</script>
+</table>
+        <br>
+        <h3 align="center">Total Marks:<p id="tex" style="display:inline"></p></h3>
+        <br>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/popper.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendors/nice-select/js/jquery.nice-select.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/mail-script.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/custom.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/stellar.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendors/lightbox/simpleLightbox.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendors/isotope/imagesloaded.pkgd.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendors/isotope/isotope-min.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendors/jquery-ui/jquery-ui.js')}}"></script>
+</body>
+</html>

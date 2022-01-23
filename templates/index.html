@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Hospice Medical</title>
+
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/owl-carousel/owl.carousel.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/lightbox/simpleLightbox.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/nice-select/css/nice-select.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/animate-css/animate.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/jquery-ui/jquery-ui.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/linericon/style.css') }}">
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+
+</head>
+
+<body>
+
+
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="top_menu row m0">
+			<div class="container">
+				<div class="float-right">
+					<ul class="right_side">
+						<li>
+							<a href="login.html">
+								<i class="lnr lnr-phone-handset"></i>
+							    7743966215
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="lnr lnr-envelope"></i>
+								admin@hospice.com
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="{{ url_for('index') }}">
+						<img src="{{ url_for('static',filename='img/logo.png') }}" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					 aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<div class="row ml-0 w-100">
+							<div class="col-lg-12 pr-0">
+								<ul class="nav navbar-nav center_nav pull-right">
+									<li class="nav-item active">
+										<!-- <a class="nav-link" href="index.html">Home</a> -->
+										<a class="nav-link" href="{{ url_for('index') }}">Home</a>
+									</li>
+									<li class="nav-item ">
+										<!-- <a class="nav-link" href="departments.html">Departments</a> -->
+										<a class="nav-link" href="{{ url_for('index') }}">Departments</a>
+									</li>
+									<li class="nav-item ">
+										<!-- <a class="nav-link" href="doctors.html">Doctors</a> -->
+										<a class="nav-link" href="{{ url_for('index') }}">Doctors</a>
+									</li>
+									<li class="nav-item submenu dropdown">
+										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+										<ul class="dropdown-menu">
+											<li class="nav-item">
+												<a class="nav-link" href="{{ url_for('index') }}">About</a>
+
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="{{ url_for('index') }}">Services</a>
+												<!-- <a class="nav-link" href="services.html">Services</a> -->
+											</li>
+											<li class="nav-item">
+												<!-- <a class="nav-link" href="elements.html">Elements</a> -->
+												<a class="nav-link" href="{{ url_for('index') }}">Elements</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<!-- <a class="nav-link" href="contact.html">Contact</a> -->
+										<a class="nav-link" href="{{ url_for('index') }}">Contact</a>
+									</li>
+									<li class="nav-item">
+										<!-- <a class="nav-link" href="contact.html">Contact</a> -->
+										<a class="nav-link" href="{{ url_for('index') }}">Logout</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================ Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner d-flex align-items-center">
+			<div class="container">
+				<div class="banner_content text-left">
+					<h1>Welcome To Hospice Hospital</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Procedure Category Area =================-->
+		 <section class="procedure-category">
+
+
+		 </section>
+	<!--================ End Procedure Category Area =================-->
+
+
+
+
+	<!--================ Start Offered Services Area =================-->
+	<section class="service_area section_gap">
+		<div class="container">
+			<div class="row justify-content-center section-title-wrap">
+				<div class="col-lg-12">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="single_service">
+						<span class="lnr lnr-rocket"></span>
+						<a href="#">
+							<h4>24/7 Emergency</h4>
+						</a>
+						<p>
+							inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single_service">
+						<span class="lnr lnr-heart-pulse"></span>
+						<a href="#">
+							<h4>Expert Consultation</h4>
+						</a>
+						<p>
+							inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single_service">
+						<span class="lnr lnr-bug"></span>
+						<a href="#">
+							<h4>Intensive Care</h4>
+						</a>
+						<p>
+							inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single_service">
+						<span class="lnr lnr-users"></span>
+						<a href="#">
+							<h4>Family Planning</h4>
+						</a>
+						<p>
+							inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Offered Services Area =================-->
+
+
+	<!--================ Start Appointment Area =================-->
+	<section class="appointment-area">
+		<div class="container">
+			<div class="row justify-content-between align-items-center appointment-wrap">
+				<div class="col-lg-5 col-md-6 appointment-left">
+					<h1>
+						Servicing Hours
+					</h1>
+					<p>
+						The servicing hours of the hospital.
+					</p>
+					<ul class="time-list">
+						<li class="d-flex justify-content-between">
+							<span>Monday-Friday</span>
+							<span>08.00 am - 10.00 pm</span>
+						</li>
+						<li class="d-flex justify-content-between">
+							<span>Saturday</span>
+							<span>08.00 am - 10.00 pm</span>
+						</li>
+						<li class="d-flex justify-content-between">
+							<span>Sunday</span>
+							<span>08.00 am - 10.00 pm</span>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 pt-60 pb-60">
+					<div class="appointment-right">
+						<form class="form-wrap"method="POST"action="{{ url_for('index')}}">
+							<h3 class="pb-20 text-center mb-20">Add Patient</h3>
+							<input type="text" class="form-control" name="name" placeholder="Patient Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Patient Name'">
+							<input type="text" class="form-control" name="phone" placeholder="Phone " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'">
+							<input type="email" class="form-control" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+							<input id="datepicker1" name="dop" class="dates form-control" placeholder="Date of Birth" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Date of Birth'">
+							<div class="form-select" id="service-select">
+								<select name="dob">
+									<option data-display="">Gender</option>
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+								</select>
+							</div>
+							<input id="datepicker2" class="dates form-control" placeholder="Appointment Date" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Appointment Date'">
+							<!-- <textarea name="messege" class="" rows="5" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'"></textarea> -->
+							<div class="text-center confirm_btn_box">
+								<!-- <button class="main_btn text-uppercase">Confirm Appointment</button> -->
+								<!-- <a class="main_btn text-uppercase">Book an Appointment</a> -->
+								<br>
+								<input type="submit" name="submit" class="nw-btn main_btn circle" value="Add">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Appointment Area =================-->
+
+	<!--================ Start recent-blog Area =================-->
+	<section class="recent-blog-area section_gap">
+		<div class="container">
+			<div class="row justify-content-center section-title-wrap">
+				<div class="col-lg-12">
+					<h1>Our Recent Blogs</h1>
+					<p>
+						The blogs suggested by our doctors for the patients to read and get aquainted with the disease.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="single-recent-blog col-lg-4 col-md-4">
+					<div class="thumb">
+						<!-- <img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt=""> -->
+						<img src="{{ url_for('static',filename='img/b1.jpg') }}" alt="">
+					</div>
+					<a href="https://www.nia.nih.gov/health/what-alzheimers-disease">
+						<h4>What is Alzheimer's Disease</h4>
+					</a>
+					<p>
+						Alzheimer’s disease is an irreversible, progressive brain disorder that slowly destroys memory and thinking skills and, eventually, the ability to carry out the simplest tasks
+					</p>
+					<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+						<div class="meta">
+							<span class="lnr lnr-calendar-full"></span> 13th Dec
+							<span class="lnr lnr-heart"></span> 15
+							<span class="lnr lnr-bubble"></span> 04
+						</div>
+					</div>
+				</div>
+				<div class="single-recent-blog col-lg-4 col-md-4">
+					<div class="thumb">
+						<!-- <img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt=""> -->
+						<img src="{{ url_for('static',filename='img/b2.jpg') }}" alt="">
+					</div>
+					<a href="https://www.alzheimers.net/september-21-marks-world-alzheimers-day/">
+						<h4>September 21 Marks World Alzheimer’s Day </h4>
+					</a>
+					<p>
+						The international campaign sponsored by Alzheimer’s Disease International (ADI), “World Alzheimer’s Day” is a global effort to raise awareness and challenge the stigma that surrounds dementia.
+					</p>
+					<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+						<div class="meta">
+							<span class="lnr lnr-calendar-full"></span> 30th March
+							<span class="lnr lnr-heart"></span> 95
+							<span class="lnr lnr-bubble"></span> 40
+						</div>
+					</div>
+				</div>
+				<div class="single-recent-blog col-lg-4 col-md-4">
+					<div class="thumb">
+						<!-- <img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt=""> -->
+						<img src="{{ url_for('static',filename='img/b3.jpg') }}" alt="">
+					</div>
+					<a href="#">
+						<h4>How Technology Can Help People With Alzheimer’s Avoid Emergency Rooms</h4>
+					</a>
+					<p>
+						Many Americans are turning to technology in hopes of detecting or preventing medical conditions or diseases, like Alzheimer’s.
+					</p>
+					<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+						<div class="meta">
+							<span class="lnr lnr-calendar-full"></span> 13th Dec
+							<span class="lnr lnr-heart"></span> 50
+							<span class="lnr lnr-bubble"></span> 10
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ end recent-blog Area =================-->
+
+
+
+
+
+	<!--================ Optional JavaScript =================-->
+	<!--================ jQuery first, then Popper.js, then Bootstrap JS =================-->
+	<script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/popper.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendors/nice-select/js/jquery.nice-select.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/mail-script.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/custom.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/stellar.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendors/lightbox/simpleLightbox.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendors/isotope/imagesloaded.pkgd.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendors/isotope/isotope-min.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendors/jquery-ui/jquery-ui.js')}}"></script>
+</body>
+
+</html>

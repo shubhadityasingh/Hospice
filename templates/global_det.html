@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Upload</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/owl-carousel/owl.carousel.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/lightbox/simpleLightbox.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/nice-select/css/nice-select.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/animate-css/animate.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/jquery-ui/jquery-ui.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/linericon/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+</head>
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="top_menu row m0">
+			<div class="container">
+				<div class="float-left">
+					<ul class="left_side">
+						<li>
+							<a href="login.html">
+								<i class="fa fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="fa fa-dribbble"></i>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="fa fa-behance"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="float-right">
+					<ul class="right_side">
+						<li>
+							<a href="login.html">
+								<i class="lnr lnr-phone-handset"></i>
+									7743966215
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="lnr lnr-envelope"></i>
+								admin@hospice.com
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html">
+						<img src="{{ url_for('static',filename='img/logo.png') }}" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					 aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<div class="row ml-0 w-100">
+							<div class="col-lg-12 pr-0">
+								<ul class="nav navbar-nav center_nav pull-right">
+									<li class="nav-item active">
+										<!-- <a class="nav-link" href="index.html">Home</a> -->
+										<a class="nav-link" href="{{ url_for('index') }}">Home</a>
+									</li>
+									<li class="nav-item ">
+										<!-- <a class="nav-link" href="departments.html">Departments</a> -->
+										<a class="nav-link" href="{{ url_for('departments') }}">Departments</a>
+									</li>
+									<li class="nav-item ">
+										<!-- <a class="nav-link" href="doctors.html">Doctors</a> -->
+										<a class="nav-link" href="{{ url_for('doctors') }}">Doctors</a>
+									</li>
+									<li class="nav-item submenu dropdown">
+										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+										<ul class="dropdown-menu">
+											<li class="nav-item">
+												<a class="nav-link" href="{{ url_for('about') }}">About</a>
+												<!-- <a class="nav-link" href="about.html">About</a -->
+												<!-- <a class="nav-link" href="{{ url_for('services') }}">Services</a> -->
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="{{ url_for('services') }}">Services</a>
+												<!-- <a class="nav-link" href="services.html">Services</a> -->
+											</li>
+											<li class="nav-item">
+												<!-- <a class="nav-link" href="elements.html">Elements</a> -->
+												<a class="nav-link" href="{{ url_for('elements') }}">Elements</a>
+											</li>
+											<li class="nav-item">
+												<!-- <a class="nav-link" href="contact.html">Contact</a> -->
+												<a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<!-- <a class="nav-link" href="contact.html">Contact</a> -->
+										<a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+									</li>
+									<li class="nav-item">
+										<!-- <a class="nav-link" href="contact.html">Contact</a> -->
+										<a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================ Banner Area =================-->
+	<section class="banner_area">
+		<div class="banner_inner d-flex align-items-center">
+			<div class="container">
+				<div class="banner_content text-left">
+					<h2>Procedure Category</h2>
+					<div class="page_link">
+						<a href="index.html">Home</a>
+						<a href="departments.html">Departments</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br>
+    <br>
+    <br>
+
+
+	<h2 align="center">Geriatric Depression Scale Score</h2>
+		<br>
+		<style>
+		table {
+		  border-collapse: collapse;
+		  width: 100%;
+		  padding:15px;
+		}
+
+		th, td {
+		  padding: 8px;
+		  text-align: left;
+		}
+
+		tr:hover {background-color:#f5f5f5;}
+		</style>
+
+
+		<br>
+		<h3 style="margin-left: 190px;">Instructions regarding the tests</h2>
+		<ul style="margin-left: 160px;"><br>
+			<li><h5>YES = 1 (Mark)</h5></li>
+			<li><h5>NO = 0 (Marks)</h5></li>
+		</ul>
+
+	<table style="width:75%" border="5" align="center" id="myTable" class="table">
+			<style type="text/css">
+			  b {
+ 					 color: black;
+
+				}
+			</style>
+			<tr>
+			<th>Questions</th>
+			<th>Maximum Marks</th>
+			<th>Marks Obtained</th>
+			</tr>
+
+	            <tr><td>a) Are you basically satisfied with your life?YES / NO</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox" onclick="myFunction()" name="nam" >
+				<label for="default-checkbox"></label></div></td></tr>
+
+				<tr><td>b) Have you dropped many of your activities and interests?YES / NO</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox1" onclick="myFunction()" name="nam">
+				<label for="default-checkbox1"></label></div></td></tr>
+
+				<tr><td>c) Do you feel that your life is empty?YES / NO</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox2" onclick="myFunction()" name="nam">
+				<label for="default-checkbox2"></label></div></td></tr>
+
+				<tr><td>d) Are you in good spirits most of the time? YES / NO</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox3" onclick="myFunction()" name="nam">
+				<label for="default-checkbox3"></label></div></td></tr>
+
+				<tr><td>e) Do you often get bored? YES/ NO</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox4" onclick="myFunction()" name="nam">
+				<label for="default-checkbox4"></label></div></td></tr>
+
+				<tr><td>f) Are you afraid that something bad is going to happen to you? YES / NO</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox5" onclick="myFunction()" name="nam">
+				<label for="default-checkbox5"></label></div></td></tr>
+
+				<tr><td>g) Do you feel happy most of the time? YES / NO</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox6" onclick="myFunction()" name="nam">
+				<label for="default-checkbox6"></label></div></td></tr>
+
+				<tr><td>h) Do you often feel helpless? YES / NO</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox7" onclick="myFunction()" name="nam">
+				<label for="default-checkbox7"></label></div></td></tr>
+
+				<tr><td>i) Do you prefer to stay at home, rather than going out and doing new things? YES / NO </td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox8" onclick="myFunction()" name="nam">
+				<label for="default-checkbox8"></label></div></td></tr>
+
+				<tr><td>j) Do you feel you have more problems with memory than most? YES / NO</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox9" onclick="myFunction()" name="nam">
+				<label for="default-checkbox9"></label></div></td></tr>
+
+                <tr><td>k) Do you think it is wonderful to be alive now? YES / NO</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox10" onclick="myFunction()" name="nam">
+				<label for="default-checkbox10"></label></div></td></tr>
+
+				<tr><td>l) Do you feel pretty worthless the way you are now? YES / NO</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox11" onclick="myFunction()" name="nam">
+				<label for="default-checkbox11"></label></div></td></tr>
+
+				<tr><td>m) Do you feel full of energy? YES / NO
+			    </td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox12" onclick="myFunction()" name="nam">
+				<label for="default-checkbox12"></label></div></td></tr>
+
+				<tr><td>n) Do you feel that your situation is hopeless? YES / NO</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox13" onclick="myFunction()" name="nam">
+				<label for="default-checkbox13"></label></div></td></tr>
+
+				<tr><td>o)  Do you think that most people are better off than you are? YES / NO</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox14" onclick="myFunction()" name="nam">
+				<label for="default-checkbox14"></label></div></td></tr>
+
+				<tr>
+					<td>Total Marks of the Patient:</td>
+					<td>15</td>
+					<td id='total'></td>
+				</tr>
+
+		<br><br>
+		<script type="text/javascript">
+		    function myFunction(){
+		    	var check = document.getElementsByName('nam');
+		    	var count = document.querySelectorAll('input[name=nam]:checked').length;
+		    	document.getElementById("total").innerHTML = count;
+		    	document.getElementById("total1").innerHTML = count;
+
+		    	}
+
+		</script>
+
+		<script type="text/javascript">
+			window.onload = function abc() {
+		     UncheckAll();
+		 }
+			function UncheckAll(){
+		      var w = document.getElementsByTagName('input');
+		      for(var i = 0; i < w.length; i++){
+		        if(w[i].type=='checkbox'){
+		          w[i].checked = false;
+		        }
+		      }
+  		}
+		</script>
+</table>
+    	<br>
+        <h3 align="center">Total Marks:<p id="total1" style="display:inline"></p></h3>
+        <br>
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>

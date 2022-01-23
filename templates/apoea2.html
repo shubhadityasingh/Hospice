@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Upload</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/owl-carousel/owl.carousel.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/lightbox/simpleLightbox.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/nice-select/css/nice-select.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/animate-css/animate.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/jquery-ui/jquery-ui.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/linericon/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+</head>
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="top_menu row m0">
+			<div class="container">
+				<div class="float-left">
+					<ul class="left_side">
+						<li>
+							<a href="login.html">
+								<i class="fa fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="fa fa-dribbble"></i>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="fa fa-behance"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="float-right">
+					<ul class="right_side">
+						<li>
+							<a href="login.html">
+								<i class="lnr lnr-phone-handset"></i>
+									7743966215
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="lnr lnr-envelope"></i>
+								admin@hospice.com
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html">
+						<img src="{{ url_for('static',filename='img/logo.png') }}" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					 aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<div class="row ml-0 w-100">
+							<div class="col-lg-12 pr-0">
+								<ul class="nav navbar-nav center_nav pull-right">
+									<li class="nav-item active">
+										<!-- <a class="nav-link" href="index.html">Home</a> -->
+										<a class="nav-link" href="{{ url_for('index') }}">Home</a>
+									</li>
+									<li class="nav-item ">
+										<!-- <a class="nav-link" href="departments.html">Departments</a> -->
+										<a class="nav-link" href="{{ url_for('departments') }}">Departments</a>
+									</li>
+									<li class="nav-item ">
+										<!-- <a class="nav-link" href="doctors.html">Doctors</a> -->
+										<a class="nav-link" href="{{ url_for('doctors') }}">Doctors</a>
+									</li>
+									<li class="nav-item submenu dropdown">
+										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+										<ul class="dropdown-menu">
+											<li class="nav-item">
+												<a class="nav-link" href="{{ url_for('about') }}">About</a>
+												<!-- <a class="nav-link" href="about.html">About</a -->
+												<!-- <a class="nav-link" href="{{ url_for('services') }}">Services</a> -->
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="{{ url_for('services') }}">Services</a>
+												<!-- <a class="nav-link" href="services.html">Services</a> -->
+											</li>
+											<li class="nav-item">
+												<!-- <a class="nav-link" href="elements.html">Elements</a> -->
+												<a class="nav-link" href="{{ url_for('elements') }}">Elements</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<!-- <a class="nav-link" href="contact.html">Contact</a> -->
+										<a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+									</li>
+									<li class="nav-item">
+										<!-- <a class="nav-link" href="contact.html">Contact</a> -->
+										<a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================ Banner Area =================-->
+	<section class="banner_area">
+		<div class="banner_inner d-flex align-items-center">
+			<div class="container">
+				<div class="banner_content text-left">
+					<h2>Procedure Category</h2>
+					<div class="page_link">
+						<a href="index.html">Home</a>
+						<a href="departments.html">Departments</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <br><br>
+    <h1 style="text-align: left;margin-left:590px;">Apolipoprotein A</h1><br>
+	<h3 style="text-align: left;margin-left:190px;" >APOE at a glance</h3>
+	<p style="text-align: justify;margin-left:190px;margin-right: 190px;">Apolipoprotein E (ApoE) is a major cholesterol carrier that supports lipid transport and injury repair in the brain. APOE polymorphic alleles are the main genetic determinants of Alzheimer disease (AD) risk: individuals carrying the ε4 allele are at increased risk of AD compared with those carrying the more common ε3 allele, whereas the ε2 allele decreases risk. Presence of the APOE ε4 allele is also associated with increased risk for cerebral amyloid angiopathy and age-related cognitive decline during normal ageing. ApoE–lipoproteins bind to several cell-surface receptors to deliver lipids and also to hydrophobic amyloid-β (Aβ) peptide, which is thought to initiate toxic events that lead to synaptic dysfunction and neurodegeneration in AD. ApoE isoforms differentially regulate Aβ aggregation and clearance in the brain, and have distinct functions in regulating brain lipid transport, glucose metabolism, neuronal signalling, neuroinflammation, and mitochondrial function. In this Review, we describe current knowledge on ApoE in the CNS, with a particular emphasis on the clinical and pathological features associated with carriers of different ApoE isoforms. We also discuss Aβ-dependent and Aβ-independent mechanisms that link ApoE4 status with AD risk, and consider how to design effective strategies for AD therapy by targeting ApoE</p>
+
+	<h3 style="text-align: left;margin-left:190px;margin-right: 190px;" >Why do I need this test?</h3>
+	<p style="text-align: justify;margin-left:190px;margin-right: 190px;">You may need this test to see if you are at increased risk for heart disease. You may also need this test if you have already had heart problems such as a heart attack. This test is not used as often as a lipid profile. A lipid profile measures HDL and LDL cholesterol. But some studies suggest that apolipoprotein A test results are a good measure of your heart disease risk. This test may also help your healthcare provider fine-tune your risk if you have a family history of heart disease.</p>
+
+	<h3 style="text-align: left;margin-left:190px;">What other tests might I have along with this test?</h3>
+	<ul style="margin-left: 160px;">
+	<li>Lipid profile</li>
+
+    <li>LDL cholesterol</li>
+
+    <li>HDL cholesterol</li>
+
+    <li>Triglycerides</li>
+
+    <li>Total cholesterol</li>
+
+    <li>Apolipoprotein B</li>
+</ul>
+
+    <h3 style="text-align:left;margin-left:190px; margin-right:190px;" >What do the test results mean?</h3>
+    <p style="text-align: justify;margin-left:190px;margin-right: 190px;">Test results may vary depending on your age, gender, health history, the method used for the test, and other things. Your test results may not mean you have a problem. Ask your healthcare provider what your test results mean for you.</p>
+    <ul style="margin-left: 160px;">
+	<li> Have high levels of apolipoprotein (familial hyperalphalipoproteinemia)</li>
+
+    <li>Have a genetic disorder called familial cholesteryl ester transfer protein deficiency, or CETP</li>
+
+    <li>Take medicines containing extra estrogens</li>
+
+    <li> Take niacin</li>
+
+    <li>Take statins, a type of cholesterol-lowering medicine</li>
+
+    <li>Lose weight</li>
+
+    </ul>
+
+     <p style="text-align: justify;margin-left:190px;margin-right: 190px;">Your apolipoprotein A levels may be low if you have:</p>
+
+     <ul style="margin-left: 160px;">
+	<li>
+
+    Low levels of apolipoprotein (familial hypoalphalipoproteinemia)
+
+
+
+
+
+
+
+
+
+
+</li>
+
+    <li>HTangier disease, a rare inherited disorder that lowers the amount of HDL</li>
+
+    <li>Hepatocellular disorders, which are certain types of liver problems</li>
+
+    <li> Take niacin</li>
+
+    <li>Nephritic syndrome, a group of kidney problems</li>
+
+    <li>Chronic kidney (renal) failure</li>
+
+    <li>Coronary artery disease. This means the arteries carrying blood to the heart become narrowed and hardened.</li>
+
+    <li>Cholestasis, which means problems with the flow of bile from the liver</li>
+
+    </ul>
+    <br><br>
+
+</body>
+</html>

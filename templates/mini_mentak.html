@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Upload</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/owl-carousel/owl.carousel.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/lightbox/simpleLightbox.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/nice-select/css/nice-select.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/animate-css/animate.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/jquery-ui/jquery-ui.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='vendors/linericon/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+</head>
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="top_menu row m0">
+			<div class="container">
+				<div class="float-left">
+					<ul class="left_side">
+						<li>
+							<a href="login.html">
+								<i class="fa fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="fa fa-dribbble"></i>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="fa fa-behance"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="float-right">
+					<ul class="right_side">
+						<li>
+							<a href="login.html">
+								<i class="lnr lnr-phone-handset"></i>
+									7743966215
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="lnr lnr-envelope"></i>
+								admin@hospice.com
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html">
+						<img src="{{ url_for('static',filename='img/logo.png') }}" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					 aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<div class="row ml-0 w-100">
+							<div class="col-lg-12 pr-0">
+								<ul class="nav navbar-nav center_nav pull-right">
+									<li class="nav-item active">
+										<!-- <a class="nav-link" href="index.html">Home</a> -->
+										<a class="nav-link" href="{{ url_for('index') }}">Home</a>
+									</li>
+									<li class="nav-item ">
+										<!-- <a class="nav-link" href="departments.html">Departments</a> -->
+										<a class="nav-link" href="{{ url_for('departments') }}">Departments</a>
+									</li>
+									<li class="nav-item ">
+										<!-- <a class="nav-link" href="doctors.html">Doctors</a> -->
+										<a class="nav-link" href="{{ url_for('doctors') }}">Doctors</a>
+									</li>
+									<li class="nav-item submenu dropdown">
+										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+										<ul class="dropdown-menu">
+											<li class="nav-item">
+												<a class="nav-link" href="{{ url_for('about') }}">About</a>
+												<!-- <a class="nav-link" href="about.html">About</a -->
+												<!-- <a class="nav-link" href="{{ url_for('services') }}">Services</a> -->
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="{{ url_for('services') }}">Services</a>
+												<!-- <a class="nav-link" href="services.html">Services</a> -->
+											</li>
+											<li class="nav-item">
+												<!-- <a class="nav-link" href="elements.html">Elements</a> -->
+												<a class="nav-link" href="{{ url_for('elements') }}">Elements</a>
+											</li>
+											<li class="nav-item">
+												<!-- <a class="nav-link" href="contact.html">Contact</a> -->
+												<a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<!-- <a class="nav-link" href="contact.html">Contact</a> -->
+										<a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+									</li>
+									<li class="nav-item">
+										<!-- <a class="nav-link" href="contact.html">Contact</a> -->
+										<a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================ Banner Area =================-->
+	<section class="banner_area">
+		<div class="banner_inner d-flex align-items-center">
+			<div class="container">
+				<div class="banner_content text-left">
+					<h2>Procedure Category</h2>
+					<div class="page_link">
+						<a href="index.html">Home</a>
+						<a href="departments.html">Departments</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br>
+    <br>
+    <br>
+
+
+	<h2 align="center">Standardised MSME Test</h2>
+		<br>
+		<style>
+		table {
+		  border-collapse: collapse;
+		  width: 100%;
+		  padding:15px;
+		}
+
+		th, td {
+		  padding: 8px;
+		  text-align: left;
+		}
+
+		tr:hover {background-color:#f5f5f5;}
+		</style>
+		<h3 style="margin-left: 190px;">Instructions regarding the tests</h3>
+		<ul style="margin-left: 160px;"><br>
+			<li><h5>YES = 1 (Mark)</h5></li>
+			<li><h5>NO = 0 (Marks)</h5></li>
+		</ul>
+
+	<table style="width:75%" border="5" align="center" id="myTable" class="table">
+			<style type="text/css">
+			  b {
+ 					 color: black;
+
+				}
+			</style>
+			<tr>
+			<th>Questions</th>
+			<th>Maximum Marks</th>
+			<th>Marks Obtained</th>
+			</tr>
+
+	            <tr><td>a) What year is this?</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox" onclick="myFunction()" name="nam" >
+				<label for="default-checkbox"></label></div></td></tr>
+
+				<tr><td>b) What season is this?(during the last week of the old season or first week of a new season, accept either)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox1" onclick="myFunction()" name="nam">
+				<label for="default-checkbox1"></label></div></td></tr>
+
+				<tr><td>c) What month is this?(on the first day of a new month or the last day of the previous month, accept either)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox2" onclick="myFunction()" name="nam">
+				<label for="default-checkbox2"></label></div></td></tr>
+
+				<tr><td>d) What is today’s date?(accept previous or next date)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox3" onclick="myFunction()" name="nam">
+				<label for="default-checkbox3"></label></div></td></tr>
+
+				<tr><td>e) What day of the week is this?(accept exact answer only)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox4" onclick="myFunction()" name="nam">
+				<label for="default-checkbox4"></label></div></td></tr>
+
+				<tr><td>f) What country are we in?(accept exact answer only)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox5" onclick="myFunction()" name="nam">
+				<label for="default-checkbox5"></label></div></td></tr>
+
+				<tr><td>g) What state are we in?(accept exact answer only)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox6" onclick="myFunction()" name="nam">
+				<label for="default-checkbox6"></label></div></td></tr>
+
+				<tr><td>h) What city/town are we in?(accept exact answer only)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox7" onclick="myFunction()" name="nam">
+				<label for="default-checkbox7"></label></div></td></tr>
+
+				<tr><td>i) (At home) What is the street address of this house?(accept street name and house number or equivalent in rural areas)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox8" onclick="myFunction()" name="nam">
+				<label for="default-checkbox8"></label></div></td></tr>
+
+				<tr><td>j) (In facility) What is the name of this building?(accept exact name of institution only)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox9" onclick="myFunction()" name="nam">
+				<label for="default-checkbox9"></label></div></td></tr>
+
+                <tr><td>k) (At home)What room are we in?(accept exact answer only)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox10" onclick="myFunction()" name="nam">
+				<label for="default-checkbox10"></label></div></td></tr>
+
+				<tr><td>l) (In  facility) What floor of the building are we on?(accept exact answer only)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox11" onclick="myFunction()" name="nam">
+				<label for="default-checkbox11"></label></div></td></tr>
+
+				<tr><td>m) I am going to name three objects. When I am finished, I want you to repeat them. Remember what they are because I am going to ask you to name them again in a few minutes(say slowly at approximately one-second intervals)<br><br>
+				Ball  Car   Man<br><br>
+				For repeated use: Bell, jar, fan; bill, tar, can; bull, bar, pan
+			    </td><td>3</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox12" onclick="myFunction()">
+				<label for="default-checkbox12"></label></div></td></tr>
+
+				<tr><td>n) Spell the word WORLD (you may help the person to spell the word correctly).Now spell it backwards please (allow 30 seconds; if the person cannot spell world even with assistance, score zero).Refer to accompanying guide for scoring instructions (score on reverse of this sheet).</td><td>5</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox13" onclick="myFunction()">
+				<label for="default-checkbox13"></label></div></td></tr>
+
+				<tr><td>o) Now what were the three objects I asked you to remember?(score one point for each correct answer regardless of order; allow ten seconds)</td><td>3</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox14" onclick="myFunction()">
+				<label for="default-checkbox14"></label></div></td></tr>
+
+				<tr><td>p) Show wristwatch. Ask: What is this called?(score one point for correct response; accept ‘wristwatch’ or ‘watch’; do not accept ‘clock’ or ‘time’, etc.; allow ten seconds)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox15" onclick="myFunction()" name="nam">
+				<label for="default-checkbox15"></label></div></td></tr>
+
+				<tr><td>q) Show pencil. Ask: What is this called? (score one point for correct response; accept ‘pencil’ only; score zero for pen; allow ten seconds for reply)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox16" onclick="myFunction()" name="nam">
+				<label for="default-checkbox16"></label></div></td></tr>
+
+				<tr><td>r) Show pencil. Ask: What is this called?(score one point for correct response; accept ‘pencil’ only;score zero for pen; allow ten seconds for reply)</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox17" onclick="myFunction()" name="nam">
+				<label for="default-checkbox17"></label></div></td></tr>
+
+				<tr><td>s) Read the words on this page and then do what it says.Then, hand the person the sheet with CLOSE YOUR EYES (score on reverse of this sheet) on it. If the subject just reads and does not close eyes, you may repeat: Read the words on this page and then do what it says, a maximum of three times. See point number three in Directions for Administration section of accompanying guidelines. Allow ten seconds; score one point only if the person closes their eyes. The person does not have to read aloud.</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox18" onclick="myFunction()" name="nam">
+				<label for="default-checkbox18"></label></div></td></tr>
+
+				<tr><td>t) Hand the person a pencil and paper.Write any complete sentence on that piece of paper (allow 30 seconds. Score one point. The sentence must make sense. Ignore spelling errors).</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox19" onclick="myFunction()" name="nam">
+				<label for="default-checkbox19"></label></div></td></tr>
+
+				<tr><td>u) Place design, pencil, eraser and paper in front of the person. Say: Copy this design please. Allow multiple tries.Wait until the person is finished and hands it back. Score one point for a correctly copied diagram.The person must have drawn a four-sided figure between two five-sided figures. Maximum time: one minute.</td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox20" onclick="myFunction()" name="nam">
+				<label for="default-checkbox20"></label></div></td></tr>
+
+				<tr><td>v) Ask the person if he is right or left handed. Take a piece of paper, hold it up in front of the person and say the following: Take this paper in your right/left hand (whichever is non-dominant), fold the paper in half once with both hands and put the paper down on the floor.<br><br>
+				Takes paper in correct hand  _________ <br><br>
+                Folds it in half  ___________ <br><br>
+                Puts it on the floor  ________ <br><br></td><td>1</td><td><div class="primary-checkbox">
+				<input type="checkbox" id="default-checkbox21" onclick="myFunction()" name="nam">
+				<label for="default-checkbox21"></label></div></td></tr>
+				<tr>
+					<td>Total Marks of the Patient:</td>
+					<td>30</td>
+					<td id='total'></td>
+				</tr>
+
+		<br><br>
+		<script type="text/javascript">
+		    function myFunction(){
+		    	var check = document.getElementsByName('nam');
+		    	var count = document.querySelectorAll('input[name=nam]:checked').length;
+		    	document.getElementById("total").innerHTML = count;
+		    	var check1 = document.getElementById('default-checkbox14');
+		    	var check2 = document.getElementById('default-checkbox12');
+                 var check3 = document.getElementById('default-checkbox13');
+
+		    	if(check1.checked == true || check2.checked == true || check3.checked == true){
+
+		    		if(check1.checked == true && check2.checked == true && check3.checked == false){
+		    			document.getElementById('total').innerHTML = count + 6;
+		    		}
+		    		else if(check1.checked == true && check2.checked == true && check3.checked == true){
+		    			document.getElementById('total').innerHTML = count + 11;
+		    		}
+		    		else if((check1.checked == true || check2.checked == true) && check3.checked == true){
+		    		   document.getElementById('total').innerHTML = count + 8;
+		    		 }
+		    		else if(check3.checked == false){
+		    			document.getElementById('total').innerHTML = count + 3;
+		    		}
+		    		else{
+		    			document.getElementById('total').innerHTML = count + 5;
+		    		}
+
+
+		    	}
+
+		    	}
+
+		</script>
+
+		<script type="text/javascript">
+			window.onload = function abc() {
+		     UncheckAll();
+		 }
+			function UncheckAll(){
+		      var w = document.getElementsByTagName('input');
+		      for(var i = 0; i < w.length; i++){
+		        if(w[i].type=='checkbox'){
+		          w[i].checked = false;
+		        }
+		      }
+  		}
+		</script>
+</table>
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
